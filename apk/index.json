@@ -1,67 +1,9 @@
 {
-  "packages": [
-    {
-      "name": "luci-app-podkop",
-      "version": "0.7.25-r1",
-      "hashes": "4ef41c7130b927465fd8948e5b3a44f6167c76bb5655bb31cda98c56241d1ac3",
-      "description": "LuCI podkop app",
-      "arch": "noarch",
-      "license": "GPL-2.0-or-later",
-      "origin": "feeds/base/feeds/luci/luci-app-podkop",
-      "maintainer": "OpenWrt LuCI community",
-      "url": "https://github.com/openwrt/luci",
-      "installed-size": 171803,
-      "file-size": 34922,
-      "depends": [
-        "libc",
-        "luci-base",
-        "podkop"
-      ],
-      "provides": [
-        "luci-app-podkop-any"
-      ]
-    }, {
-      "name": "luci-i18n-podkop-ru",
-      "version": "0.261104.79268",
-      "hashes": "efb51807fa4115b1033081b5ba9e66abe37a3b9236307e719672c3798c19bfcd",
-      "description": "Translation for luci-app-podkop - Русский (Russian)",
-      "arch": "noarch",
-      "license": "GPL-2.0-or-later",
-      "origin": "feeds/base/feeds/luci/luci-app-podkop",
-      "maintainer": "ITDog <podkop@itdog.info>",
-      "installed-size": 21617,
-      "file-size": 8301,
-      "depends": [
-        "libc",
-        "luci-app-podkop"
-      ],
-      "provides": [
-        "luci-i18n-podkop-ru-any"
-      ]
-    }, {
-      "name": "podkop",
-      "version": "0.7.25-r1",
-      "hashes": "50c8a39461ed106eb3281f52109d4b1ba3eb1ecd54369239fe6be5be1d565b68",
-      "description": "Domain routing. Use of VLESS, Shadowsocks technologies",
-      "arch": "noarch",
-      "license": "GPL-2.0-or-later",
-      "origin": "feeds/base/feeds/utilities/podkop",
-      "maintainer": "ITDog <podkop@itdog.info>",
-      "url": "https://podkop.net",
-      "installed-size": 192804,
-      "file-size": 36989,
-      "depends": [
-        "bind-dig",
-        "coreutils-base64",
-        "curl",
-        "jq",
-        "kmod-nft-tproxy",
-        "libc",
-        "sing-box"
-      ],
-      "provides": [
-        "podkop-any"
-      ]
-    }
-  ]
+  "version": 2,
+  "architecture": "all",
+  "packages": {
+    "luci-app-podkop": "0.7.25-r1",
+    "luci-i18n-podkop-ru": "0.261104.79412",
+    "podkop": "0.7.25-r1"
+  }
 }
