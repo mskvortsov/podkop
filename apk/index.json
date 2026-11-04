@@ -3,7 +3,7 @@
   "architecture": "all",
   "packages": {
     "luci-app-podkop": "0.7.25-r1",
-    "luci-i18n-podkop-ru": "0.261104.79412",
+    "luci-i18n-podkop-ru": "0.261104.80245",
     "podkop": "0.7.25-r1"
   }
 }
