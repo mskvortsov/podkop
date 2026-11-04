@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Podkop OpenWrt package feed</title>
+<h1>Podkop OpenWrt package feed</h1>
+<p>Architecture-independent Podkop APK packages for OpenWrt 25.12.</p>
+<p><a href="apk/">OpenWrt 25.12 APK feed (.apk)</a></p>
+<h2>Install on OpenWrt 25.12</h2>
+<pre>mkdir -p /etc/apk/keys /etc/apk/repositories.d
+wget -O /etc/apk/keys/podkop-feed.pem "https://mskvortsov.github.io/podkop/keys/podkop-feed.pem"
+echo "https://mskvortsov.github.io/podkop/apk/packages.adb" >> /etc/apk/repositories.d/customfeeds.list
+apk update
+apk add podkop luci-app-podkop luci-i18n-podkop-ru</pre>
+<p>Packages are rebuilt by the Podkop release workflow and published from GitHub Releases.</p>
+</html>
